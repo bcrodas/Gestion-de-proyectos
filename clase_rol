@@ -6,6 +6,8 @@ public class Rol{
     String nombreRol;
     String permisos; 
 
+     //Colocamos los métodos contructores
+
     public Rol (int idRol, String nombreRol, String permisos){
         this.idRol = idRol;
         this.nombreRol = nombreRol;
@@ -35,15 +37,14 @@ public class Rol{
         this.permisos = permisos; 
     }
 
-    //Imprimimos la información
-
-    
+    //Establecemos el método main
 
     public static void main(String[] args){
         Rol rol1 = new Rol(2021, "Administrador", "Permisos de Administrador");
         Rol rol2 = new Rol(2020, "Desarrollador", "Permisos de Desarrollador");
 
-    
+    //Imprimimos la información
+
         System.out.println("El id de su rol es: " + rol1.getidRol());
         System.out.println("El nombre de su rol es: " + rol1.getnombreRol());
         System.out.println("El permiso de su rol es: " + rol1.getpermisos());
