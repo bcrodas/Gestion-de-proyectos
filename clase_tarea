@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Tarea{
 
     //colocamos los atributos
@@ -20,23 +22,47 @@ public class Tarea{
 
     //aplicamos métodos getter and setter
 
-    public int getidProyecto(){return idProyecto; }
-    public void setidTarea(int idTarea) { this.idTarea = idTarea; }
+    public int getidTarea(){
+        return idTarea; 
+    }
+    public void setidTarea(int idTarea) { 
+        this.idTarea = idTarea; 
+    }
 
-    public int getnombreTarea(){return nombreTarea; }
-    public void setnombreTarea(int nombreTarea) { this.nombreTarea = nombreTarea; }
+    public String getnombreTarea(){
+        return nombreTarea; 
+    }
+    public void setnombreTarea(String nombreTarea) { 
+        this.nombreTarea = nombreTarea; 
+    }
 
-    public int getdescripcion(){return descripcion; }
-    public void setdescripcion(int descripcion) { this.descripcion = descripcion; }
+    public String getdescripcion(){
+        return descripcion; 
+    }
+    public void setdescripcion(String descripcion) { 
+        this.descripcion = descripcion;
+    }
 
-    public int getestadoTarea(){return estadoTarea; }
-    public void setestadoTarea(int estadoTarea) { this.estadoTarea = estadoTarea; }
+    public String getestadoTarea(){
+        return estadoTarea; 
+    }
+    public void setestadoTarea(String estadoTarea) { 
+        this.estadoTarea = estadoTarea; 
+    }
 
-    public int getprioridad(){return prioridad; }
-    public void setprioridad(int prioridad) { this.prioridad = prioridad; }
+    public String getprioridad(){
+        return prioridad; 
+    }
+    public void setprioridad(String prioridad) { 
+        this.prioridad = prioridad; 
+    }
 
-    public int getfechaVencimiento(){return fechaVencimiento; }
-    public void setfechaVencimiento(int fechaVencimiento) { this.fechaVencimiento = fechaVencimiento; }
+    public Date getfechaVencimiento(){
+        return fechaVencimiento; 
+    }
+    public void setfechaVencimiento(Date fechaVencimiento) { 
+        this.fechaVencimiento = fechaVencimiento; 
+    }
 
     //imprimimos la información
 
@@ -44,7 +70,7 @@ public class Tarea{
         System.out.println("El id de su tarea es: " + idTarea);
         System.out.println("El nombre de su tarea es: " + nombreTarea);
         System.out.println("La descripcion de su tarea es: " + descripcion);
-        System.out.println("El estado de su tarea es: " + estado);
+        System.out.println("El estado de su tarea es: " + estadoTarea);
         System.out.println("La prioridad de su tarea es: " + prioridad);
         System.out.println("La fecha de vencimiento de su tarea es: " + fechaVencimiento);
     }
