@@ -1,4 +1,6 @@
-public class proyecto{
+import java.util.Date;
+
+public class Proyecto{
 
     //colocamos los atributos
 
@@ -10,7 +12,7 @@ public class proyecto{
     String estado; 
 
     
-    public proyecto(int idProyecto, String nombreProyecto, String descripcion, Date fecha_inicio, Date fecha_fin, String estado){
+    public void proyecto(int idProyecto, String nombreProyecto, String descripcion, Date fecha_inicio, Date fecha_fin, String estado){
         this.idProyecto = idProyecto;
         this.nombreProyecto = nombreProyecto;
         this.descripcion = descripcion;
@@ -42,17 +44,17 @@ public class proyecto{
         this.descripcion = descripcion; 
     }
 
-    public String fechaInicio(){
+    public Date fechaInicio(){
         return fechaInicio; 
     }
-    public void fechaInicio(String fechaInicio){ 
+    public void fechaInicio(Date fechaInicio){ 
         this.fechaInicio = fechaInicio; 
     }
 
-    public String fechaFin(){
+    public Date fechaFin(){
         return fechaFin; 
     }
-    public void fechaFin(String fechaFin){ 
+    public void fechaFin(Date fechaFin){ 
         this.fechaFin = fechaFin; 
     }
 
@@ -73,4 +75,3 @@ public class proyecto{
         System.out.println("La fecha de finalización de su proyecto es:" + fechaFin);
         System.out.println("El estado de su proyecto es:" + estado);
     }
-}
