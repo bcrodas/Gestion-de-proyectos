@@ -9,16 +9,15 @@ public class Proyecto{
     String descripcion;
     Date fechaInicio;
     Date fechaFin;
-    String estado; 
 
-    
-    public void proyecto(int idProyecto, String nombreProyecto, String descripcion, Date fecha_inicio, Date fecha_fin, String estado){
+    //colocamos método constructor
+
+    public Proyecto(int idProyecto, String nombreProyecto, String descripcion, Date fechaInicio, Date fechaFin){
         this.idProyecto = idProyecto;
         this.nombreProyecto = nombreProyecto;
         this.descripcion = descripcion;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
-        this.estado = estado;
     }
 
     //aplicamos el método getter and setter
@@ -37,41 +36,58 @@ public class Proyecto{
         this.nombreProyecto = nombreProyecto; 
     }
 
-    public String descripcion(){
+    public String getdescripcion(){
         return descripcion; 
     }
-    public void descripcion(String descripcion){ 
+    public void setdescripcion(String descripcion){ 
         this.descripcion = descripcion; 
     }
 
-    public Date fechaInicio(){
+    public Date getfechaInicio(){
         return fechaInicio; 
     }
-    public void fechaInicio(Date fechaInicio){ 
+    public void setfechaInicio(Date fechaInicio){ 
         this.fechaInicio = fechaInicio; 
     }
 
-    public Date fechaFin(){
+    public Date getfechaFin(){
         return fechaFin; 
     }
-    public void fechaFin(Date fechaFin){ 
+    public void setfechaFin(Date fechaFin){ 
         this.fechaFin = fechaFin; 
     }
 
-    public String estado(){
-        return estado; 
-    }
-    public void estado(String estado){ 
-        this.estado = estado; 
+    //Establecemos los metodos de estado del proyecto
+
+    public void Activo(){
+        System.out.println(nombreProyecto + "esta activo");
     }
 
-    //imprimimos la información
-
-    public void datos_proyecto (){
-        System.out.println("El numero de su proyecto es:" + idProyecto);
-        System.out.println("El nombre de su proyecto:" + nombreProyecto);
-        System.out.println("La descripcion de su proyecto es:" + descripcion);
-        System.out.println("La fecha de inicio de su proyecto es:" + fechaInicio);
-        System.out.println("La fecha de finalización de su proyecto es:" + fechaFin);
-        System.out.println("El estado de su proyecto es:" + estado);
+    public void en_pausa(){
+        System.out.println(nombreProyecto + "esta en pausa");
     }
+
+    public void completado(){
+        System.out.println(nombreProyecto + "esta completado");
+    }
+
+    //Aplicamos el método main
+
+    public static void main(String[] args){
+        Proyecto proyecto1 = new Proyecto(20223, "Exposición de algebra", "Exponer acerca de matrices",new Date(125,03,23) ,new Date(125, 4, 27));
+
+        proyecto1.en_pausa();
+
+     //imprimimos la información
+
+        System.out.println("El id de su Proyecto es: " + proyecto1.getidProyecto());
+        System.out.println("El nombre de su Proyecto es: " + proyecto1.getnombreProyecto());
+        System.out.println("La descripción de su Proyecto es: " + proyecto1.getdescripcion());
+        System.out.println("La fecha de inicio de su Proyecto es: " + proyecto1.getfechaInicio());
+        System.out.println("La fecha de finalización de su Proyecto es: " + proyecto1.getfechaFin());
+    }
+}   
+
+
+
+
