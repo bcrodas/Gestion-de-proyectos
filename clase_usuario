@@ -4,10 +4,10 @@ public class Usuario{
 
     //colocamos los atributos
     
-    int idUsuario;
-    String nombre;
-    String correoElectronico;
-    String rol;
+    private int idUsuario;
+    private String nombre;
+    private String correoElectronico;
+    private String rol;
 
     public Usuario(int idUsuario, String nombre, String correoElectronico, String rol){
         this.idUsuario = idUsuario;
