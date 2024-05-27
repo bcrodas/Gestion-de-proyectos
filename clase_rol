@@ -6,10 +6,10 @@ public class Rol{
     String nombreRol;
     String permisos; 
 
-    public void rol (int idRol, String nombreRol, String permisos){
-        this.idRol=idRol;
-        this.nombreRol=nombreRol;
-        this.permisos=permisos;
+    public Rol (int idRol, String nombreRol, String permisos){
+        this.idRol = idRol;
+        this.nombreRol = nombreRol;
+        this.permisos = permisos;
     }
 
     //Aplicamos getter y setter
@@ -37,9 +37,20 @@ public class Rol{
 
     //Imprimimos la información
 
-    public void datos_rol (){
-        System.out.println("El id de su rol es: " + idRol);
-        System.out.println("El nombre de su rol es: " + nombreRol);
-        System.out.println("El permiso de su rol es: " + permisos);
+    
+
+    public static void main(String[] args){
+        Rol rol1 = new Rol(2021, "Administrador", "Permisos de Administrador");
+        Rol rol2 = new Rol(2020, "Desarrollador", "Permisos de Desarrollador");
+
+    
+        System.out.println("El id de su rol es: " + rol1.getidRol());
+        System.out.println("El nombre de su rol es: " + rol1.getnombreRol());
+        System.out.println("El permiso de su rol es: " + rol1.getpermisos());
+
+        System.out.println("El id de su rol es: " + rol2.getidRol());
+        System.out.println("El nombre de su rol es: " + rol2.getnombreRol());
+        System.out.println("El permiso de su rol es: " + rol2.getpermisos());
+        
     }
 }
