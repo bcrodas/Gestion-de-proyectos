@@ -21,23 +21,47 @@ public class proyecto{
 
     //aplicamos el método getter and setter
 
-    public int getidProyecto(){return idProyecto; }
-    public void setidProyecto(int idProyecto) { this.idProyecto = idProyecto; }
+    public int getidProyecto(){
+        return idProyecto; 
+    }
+    public void setidProyecto(int idProyecto) { 
+        this.idProyecto = idProyecto; 
+    }
 
-    public String getnombreProyecto(){return nombreProyecto; }
-    public void setnombreProyecto(String nombreProyecto){ this.nombreProyecto = nombreProyecto; }
+    public String getnombreProyecto(){
+        return nombreProyecto; 
+    }
+    public void setnombreProyecto(String nombreProyecto){ 
+        this.nombreProyecto = nombreProyecto; 
+    }
 
-    public String descripcion(){return descripcion; }
-    public void descripcion(String descripcion){ this.descripcion = descripcion; }
+    public String descripcion(){
+        return descripcion; 
+    }
+    public void descripcion(String descripcion){ 
+        this.descripcion = descripcion; 
+    }
 
-    public String fechaInicio(){return fechaInicio; }
-    public void fechaInicio(String fechaInicio){ this.fechaInicio = fechaInicio; }
+    public String fechaInicio(){
+        return fechaInicio; 
+    }
+    public void fechaInicio(String fechaInicio){ 
+        this.fechaInicio = fechaInicio; 
+    }
 
-    public String fechaFin(){return fechaFin; }
-    public void fechaFin(String fechaFin){ this.fechaFin = fechaFin; }
+    public String fechaFin(){
+        return fechaFin; 
+    }
+    public void fechaFin(String fechaFin){ 
+        this.fechaFin = fechaFin; 
+    }
 
-    public String estado(){return estado; }
-    public void estado(String estado){ this.estado = estado; }
+    public String estado(){
+        return estado; 
+    }
+    public void estado(String estado){ 
+        this.estado = estado; 
+    }
 
     //imprimimos la información
 
