@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Usuario{
 
     //colocamos los atributos
@@ -44,12 +46,20 @@ public class Usuario{
         this.rol = rol; 
     }
 
-    //Imprimimos la información
+  public static void main(String[] args){
+        Usuario usuario1 = new Usuario(202, "Lalo Landa", "lalo@gmail.com", "Administrador");
+        Usuario usuario2 = new Usuario(206, "Paco Suarez", "Paco@gmail.com", "Desarrollador");
 
-    public void datos_usuario (){
-        System.out.println("El id de su usuario es: " + idUsuario);
-        System.out.println("El nombre de su usuario es: " + nombre);
-        System.out.println("El correo de su usuario es: " + correoElectronico);
-        System.out.println("El rol de su usuario es: " + rol);
+
+        System.out.println("El id de su usuario es: " + usuario1.getidUsuario());
+        System.out.println("El nombre de su usuario es: " + usuario1.getnombre());
+        System.out.println("El correo de su usuario es: " + usuario1.getcorreoElectronico());
+        System.out.println("El rol de su usuario es: " + usuario1.getrol());
+
+        System.out.println("El id de su usuario es: " + usuario2.getidUsuario());
+        System.out.println("El nombre de su usuario es: " + usuario2.getnombre());
+        System.out.println("El correo de su usuario es: " + usuario2.getcorreoElectronico());
+        System.out.println("El rol de su usuario es: " + usuario2.getrol());
+        
     }
 }
